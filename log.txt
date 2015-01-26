@@ -1,1 +1,5 @@
-You log goes in this  file.
+
+1/26/2015 10am
+Cloned repository. Initial overview of program requirements and associated code.
+
+1/26/2015 11am

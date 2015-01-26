@@ -15,6 +15,9 @@ function variableModification(a) {
   var yourNumberIs;
   //your code here
 
+  asString = String(a);
+  yourNumberIs = "Your Number is " + a ;
+  plus5 = parseInt(a) + 5; // Using parseInt just in case.
   //end your code
   return [plus5, asString, yourNumberIs, a];
 }
@@ -29,7 +32,7 @@ false otherwise
 */
 function isString(b) {
   //your code here
-  return undefined;
+  return  typeof(b);
   //end your code
 }
 
