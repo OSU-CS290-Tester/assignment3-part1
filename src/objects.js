@@ -43,7 +43,47 @@ function returnObjectLiteral() {
 */
 
 //your code here
+function MessageLog(user){
+	this.user = user;
+	this.msgSentTotal = 0;
+	this.msgRcvTotal = 0;
+	this.sentMessages = [];
+	this.rcvMessage = "";
 
+	this.logMessage = function(message, direction)
+	{
+		if (direction == 0) 
+		{
+			//sent
+			var index = this.msgSentTotal % 5;
+			this.sentMessages.unshift(message);
+			this.msgSentTotal++;
+
+
+		} 
+		else if (direction == 1)
+		{
+			this.rcvMessage = message;
+			this.msgRcvTotal++;
+		}
+	};
+
+	this.getSentMessage = function(n){
+		if(n >=0 && n<5)
+		{
+			return this.sentMessages[n];
+		}
+	};
+
+	this.totalSent = function(){
+		return this.msgSentTotal;
+	};
+
+	this.totalReceived = function(){
+		return this.msgRcvTotal;
+	}
+	
+}
 //end your code
 
 /**
@@ -52,7 +92,9 @@ function returnObjectLiteral() {
 * received.
 */
 //your code here
-
+MessageLog.prototype.lastReceivedMessage = function(){
+	return this.rcvMessage;
+};
 //end your code
 
 /**
@@ -60,7 +102,9 @@ function returnObjectLiteral() {
 * instance receive 3 messages: "foo", "bar" and "baz", received in that order.
 * Assign it to the variable myLog.
 */
-
 //your code here
-
+var myLog = new MessageLog("BlackHatGuy");
+myLog.logMessage("foo",1);
+myLog.logMessage("bar",1);
+myLog.logMessage("baz",1);
 //end your code

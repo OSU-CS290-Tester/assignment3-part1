@@ -84,15 +84,25 @@ function GitLog(hash, date, message) {
 */
 
 //your code here
-function parseGit(log){
-	var tokens = log.split(' ');
-	var hash = tokens[0];
-	var date_items = tokens.slice(1,7);
-	var message_items = tokens.slice(8,tokens.length);
-	var clean_items = [];
-	for (var i = 0; i<message_items.length;i++)
-	{
-		var item = message_items[i];
-		message_items[i] = item.replace('"','');
+function parseGit(log_array){
+	var gitArray = [];
+	for(var i=0;i<log_array.length;i++)
+	{	log = log_array[i];
+		var tokens = log.split(' ');
+		var hash = tokens[0];
+		var date_items = tokens.slice(1,6);
+		var message_items = tokens.slice(7,tokens.length);
+		var clean_items = [];
+		var date_str = date_items.join(" ");
+		var date = new Date(date_str);
+		for (var j = 0; j<message_items.length; j++)
+		{
+			var item = message_items[j];
+			message_items[j] = item.replace('"','');
+		};
+		var msg = message_items.join(" ");
+		var git_item  = new GitLog(hash, date, msg);
+		gitArray[i] = git_item;
 	};
+	return gitArray;
 }
