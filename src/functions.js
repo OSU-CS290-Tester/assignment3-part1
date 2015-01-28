@@ -37,13 +37,13 @@ var barType = typeof bar;
 bar = function(terms){
 	for(var i = 0; i<terms.length; i++)
 	{
-		if (typeof(terms[i]) != 'number')
+		if (typeof(terms[i]) != 'number') // Check to see if it's a number
 		 {
 		 	return false;
 		 }
 		 else
 		 {
-		 	var tmp  = terms[i] * 2.0;
+		 	var tmp  = terms[i] * 2.0;  // If it's a number, double it and change the original array
 		 	terms[i] = tmp;
 		 }
 	};
@@ -86,23 +86,23 @@ function GitLog(hash, date, message) {
 //your code here
 function parseGit(log_array){
 	var gitArray = [];
-	for(var i=0;i<log_array.length;i++)
-	{	log = log_array[i];
-		var tokens = log.split(' ');
-		var hash = tokens[0];
-		var date_items = tokens.slice(1,6);
-		var message_items = tokens.slice(7,tokens.length);
-		var clean_items = [];
-		var date_str = date_items.join(" ");
-		var date = new Date(date_str);
-		for (var j = 0; j<message_items.length; j++)
+	for(var i=0;i<log_array.length;i++) 	// For every log in the provided array..
+	{	
+		log = log_array[i];
+		var tokens = log.split(' ');						//Split it by whitespace
+		var hash = tokens[0];								// First token is the hash
+		var date_items = tokens.slice(1,6);					// Tokens 2-7 are the date items
+		var message_items = tokens.slice(7,tokens.length);	// Tokens 8 to the end of the array are the message
+		var date_str = date_items.join(" ");				// Rejoin the date items
+		var date = new Date(date_str);						// Create a date object
+		for (var j = 0; j<message_items.length; j++)		// This loop removes double quotes from quote tokens
 		{
 			var item = message_items[j];
 			message_items[j] = item.replace('"','');
 		};
-		var msg = message_items.join(" ");
-		var git_item  = new GitLog(hash, date, msg);
-		gitArray[i] = git_item;
+		var msg = message_items.join(" ");					// Rejoin the message tokens
+		var git_item  = new GitLog(hash, date, msg);		// Create a Gitlog object
+		gitArray[i] = git_item;								// Add it to the array
 	};
-	return gitArray;
+	return gitArray;										// Return the array of git objects
 }

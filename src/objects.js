@@ -44,6 +44,8 @@ function returnObjectLiteral() {
 
 //your code here
 function MessageLog(user){
+
+	// Variables for MessageLog
 	this.user = user;
 	this.msgSentTotal = 0;
 	this.msgRcvTotal = 0;
@@ -55,23 +57,22 @@ function MessageLog(user){
 		if (direction == 0) 
 		{
 			//sent
-			var index = this.msgSentTotal % 5;
-			this.sentMessages.unshift(message);
-			this.msgSentTotal++;
+			this.sentMessages.unshift(message); 	// Adds the message to the back of the queue
+			this.msgSentTotal++;					// increment total messages sent by 1
 
 
 		} 
 		else if (direction == 1)
 		{
-			this.rcvMessage = message;
-			this.msgRcvTotal++;
+			this.rcvMessage = message;				// Stores latest received message
+			this.msgRcvTotal++;						// Increments received messages by one
 		}
 	};
 
 	this.getSentMessage = function(n){
 		if(n >=0 && n<5)
 		{
-			return this.sentMessages[n];
+			return this.sentMessages[n];			// Make sure n is between 0 and 5 and return msg at that index
 		}
 	};
 
