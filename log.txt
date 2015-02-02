@@ -1,9 +1,15 @@
+Start: Wed, 28 Jan 2015 08:15:00 -0800  
+End: Wed, 28 Jan 2015 09:38:54 -0800 
+Tasks: comments and log updates
 
-1/26/2015 10am
-Cloned repository. Initial overview of program requirements and associated code.
+Start: Mon, 26 Jan 2015 14:30:00 -0800 
+End: Mon, 26 Jan 2015 15:01:09 -0800 
+Tasks: functions are complete. Checking in before review
 
-1/26/2015 11am
+Start: Mon, 26 Jan 2015 12:00:00 -0800 
+End: Mon, 26 Jan 2015 13:47:47 -0800 
+Tasks: completed most functions. Lunch break
 
-
-1/26/2015 1:30pm 
-Lunch break
+Start: Mon, 26 Jan 2015 9:15:00 -0800  
+End: Mon, 26 Jan 2015 11:30:14 -0800 
+Tasks: first log entries. WIP on variables.js
