@@ -1,3 +1,6 @@
+
+
+
 Start: Wed, 28 Jan 2015 08:15:00 -0800  
 End: Wed, 28 Jan 2015 09:38:54 -0800 
 Tasks: comments and log updates
@@ -13,3 +16,74 @@ Tasks: completed most functions. Lunch break
 Start: Mon, 26 Jan 2015 9:15:00 -0800  
 End: Mon, 26 Jan 2015 11:30:14 -0800 
 Tasks: first log entries. WIP on variables.js
+
+
+#Begin Part 2
+
+
+
+Start: Sat, 31 Jan 2015 14:00:00 -0800 
+End: Sat, 31 Jan 2015 14:41:32 -0800 
+Tasks: fixed instructions
+
+Start:  Thu, 29 Jan 2015 17:00:00 -0800 
+End: Thu, 29 Jan 2015 17:06:02 -0800 
+Tasks: adjustments to html file
+
+Start:  Thu, 29 Jan 2015 14:45:00 -0800 
+End: Thu, 29 Jan 2015 16:04:37 -0800 
+Tasks: commeneted java script code and cleaned it up
+
+Start:  Thu, 29 Jan 2015 14:17:39 -0800 
+End: Thu, 29 Jan 2015 14:31:07 -0800 
+Tasks: renamed test.html to gist.html
+
+Start: Thu, 29 Jan 2015 14:17:39 -0800  
+End: Thu, 29 Jan 2015 14:18:01 -0800 
+Tasks: added css file
+
+Start: Thu, 29 Jan 2015 13:00:00 -0800 
+End: Thu, 29 Jan 2015 14:17:39 -0800 
+Tasks: code cleanup
+
+Start: Thu, 29 Jan 2015 11:00:00 -0800 
+End: Thu, 29 Jan 2015 12:33:08 -0800 
+Tasks: fixed filtering for favorites
+
+Start: Thu, 29 Jan 2015 10:00:00 -0800 
+End: Thu, 29 Jan 2015 10:11:22 -0800 
+Tasks: css adjustments
+
+Start: Thu, 29 Jan 2015 09:45:00 -0800 
+End: Thu, 29 Jan 2015 09:59:32 -0800 
+Tasks: initial css file commit
+
+Start: Thu, 29 Jan 2015 08:00:00 -0800  
+End: Thu, 29 Jan 2015 09:31:36 -0800 
+Tasks: added filtering
+
+Start: Wed, 28 Jan 2015 21:47:18 -0800 
+End: Wed, 28 Jan 2015 22:15:00 -0800 
+Tasks: got remove favorites working
+
+Start: Wed, 28 Jan 2015 20:00:00 -0800 
+End: Wed, 28 Jan 2015 21:47:18 -0800 
+Tasks: more additions to favorites section
+
+Start: Wed, 28 Jan 2015 13:00:00 -0800  
+End: Wed, 28 Jan 2015 17:12:23 -0800 
+Tasks: solved the mystery of getting more than one page, started working on favorites
+
+Start: Wed, 28 Jan 2015 08:15:00 -0800  
+End: Wed, 28 Jan 2015 09:39:40 -0800 
+Tasks: figuring out how to get different pages of gists
+
+Start: Tue, 27 Jan 2015 20:00:00 -0800 
+End: Tue, 27 Jan 2015 21:51:28 -0800 
+Tasks: added basic gist parsing and display
+
+Start: Tue, 27 Jan 2015 17:00:00 -0800  
+End: Tue, 27 Jan 2015 17:39:51 -0800 
+Tasks: initial commits with some basic features and tests
+
+
